@@ -40,3 +40,21 @@ app.use(
 
 // Locals
 app.use(passUserToView);
+
+// ---------- PUBLIC ROUTES ----------
+
+app.get('/', async (req, res) => {
+  res.render('index.ejs');
+});
+
+app.use('/auth', authCtrl);
+
+// ---------- PROTECTED ROUTES ----------
+app.use(isSignedIn);
+app.use('/Books', BooksCtrl);
+
+
+
+app.listen(port, () => {
+  console.log(`The express app is ready on port ${port}!`);
+});

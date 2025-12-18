@@ -8,7 +8,7 @@ A simple libary book shop to view books (MEN Stack)
 
 
 
-#picture for the website 
+# picture for the website 
 
 
 ![alt text](<Screenshot 2025-12-18 at 9.06.39 AM.png>)
@@ -16,6 +16,7 @@ A simple libary book shop to view books (MEN Stack)
 
 # future improvents 
 1 - borrow function 
+
 2- add a cart 
 
 
